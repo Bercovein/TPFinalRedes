@@ -3,6 +3,7 @@ package com.company;
 import java.io.*;
 import java.net.ConnectException;
 import java.net.Socket;
+import java.net.SocketException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -51,6 +52,8 @@ public class Client {
 
         } catch (ConnectException con){
             System.out.println("No se pudo acceder al servidor");
+        } catch (SocketException soc){
+            System.out.println("Se ha perdido conexión con el servidor.");
         } catch (IOException ex) {
             Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
         }
