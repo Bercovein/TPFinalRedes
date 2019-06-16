@@ -1,31 +1,32 @@
-# TPFinalRedes
+# TPFinalRedes (Bertolotti - Bercovsky)
 Trabajo final sobre Sockets ( Servidor - Cliente ) 
 
 
-Trabajo Práctico Final 
+
+Trabajo PrÃ¡ctico Final 
 Sockets
 
 Preguntas
 
-1.¿Qué es un puerto?
+1.Â¿QuÃ© es un puerto?
 
-Diversos programas TCP/IP pueden ejecutarse simultáneamente en Internet. Cada uno de estos programas funciona con un protocolo.
-Por lo tanto, a cada una de estas aplicaciones puede serle asignada una dirección única en equipo, codificada en 16 bits llamada puerto a donde se dirigen los datos. Si se trata de una solicitud enviada a la aplicación, la aplicación se denomina aplicación servidor. Si se trata de una respuesta, entonces hablamos de una aplicación cliente. 
+Diversos programas TCP/IP pueden ejecutarse simultÃ¡neamente en Internet. Cada uno de estos programas funciona con un protocolo.
+Por lo tanto, a cada una de estas aplicaciones puede serle asignada una direcciÃ³n Ãºnica en equipo, codificada en 16 bits llamada puerto a donde se dirigen los datos. Si se trata de una solicitud enviada a la aplicaciÃ³n, la aplicaciÃ³n se denomina aplicaciÃ³n servidor. Si se trata de una respuesta, entonces hablamos de una aplicaciÃ³n cliente. 
 
-2.¿Como estan formados los endpoints?
-
-
-3.¿Que es un socket?
-
-Un socket es un proceso o hilo existente en la máquina cliente y en la máquina servidora, que sirve en última instancia para que el programa servidor y el cliente lean y escriban la información. Esta información será la transmitida por las diferentes capas de red. 
-
-4.¿A qué capa del modelo TPC/IP pertenecen los sockets? ¿Porque?
+2.Â¿Como estan formados los endpoints?
 
 
-5.¿Cómo funciona el modelo cliente-servidor con TCP/IP Sockets?
+3.Â¿Que es un socket?
+
+Un socket es un proceso o hilo existente en la mÃ¡quina cliente y en la mÃ¡quina servidora, que sirve en Ãºltima instancia para que el programa servidor y el cliente lean y escriban la informaciÃ³n. Esta informaciÃ³n serÃ¡ la transmitida por las diferentes capas de red. 
+
+4.Â¿A quÃ© capa del modelo TPC/IP pertenecen los sockets? Â¿Porque?
 
 
-6.¿Cuales son las causas comunes por la que la conexión entre cliente/servidor falle?
+5.Â¿CÃ³mo funciona el modelo cliente-servidor con TCP/IP Sockets?
+
+
+6.Â¿Cuales son las causas comunes por la que la conexiÃ³n entre cliente/servidor falle?
 
 
 7.Diferencias entre sockets UDP y TCP
