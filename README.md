@@ -24,14 +24,14 @@ _Un socket es un proceso o hilo existente en la máquina cliente y en la máquin
 
 _Un socket queda definido por un par de direcciones IP local y remota, un protocolo de transporte y un par de números de puerto local y remoto. Para que dos programas puedan comunicarse entre sí es necesario que se cumplan ciertos requisitos:_
 
-    _Que un programa sea capaz de localizar al otro.
-    Que ambos programas sean capaces de intercambiarse cualquier secuencia de octetos, es decir, datos relevantes a su finalidad._
+    Que un programa sea capaz de localizar al otro.
+    Que ambos programas sean capaces de intercambiarse cualquier secuencia de octetos, es decir, datos relevantes a su finalidad.
 
-Para ello son necesarios los tres recursos que originan el concepto de socket:
+_Para ello son necesarios los tres recursos que originan el concepto de socket:_
 
-    _Un protocolo de comunicaciones, que permite el intercambio de octetos.
+    Un protocolo de comunicaciones, que permite el intercambio de octetos.
     Un par de direcciones del Protocolo de Red (Dirección IP, si se utiliza el Protocolo TCP/IP), que identifica la computadora de origen y la remota.
-    Un par de números de puerto, que identifica a un programa dentro de cada computadora._
+    Un par de números de puerto, que identifica a un programa dentro de cada computadora.
 
 
 ## 4.¿A qué capa del modelo TPC/IP pertenecen los sockets? ¿Porque?
@@ -54,9 +54,9 @@ _Las propiedades de un socket dependen de las características del protocolo en 
 
 _Cuando se implementan con el protocolo TCP, los sockets tienen las siguientes propiedades:_
 
-    _Orientado a conexión.
+    Orientado a conexión.
     Se garantiza la transmisión de todos los octetos sin errores ni omisiones.
-    Se garantiza que todo octeto llegará a su destino en el mismo orden en que se ha transmitido. Estas propiedades son muy importantes para garantizar la corrección de los programas que tratan la información._
+    Se garantiza que todo octeto llegará a su destino en el mismo orden en que se ha transmitido. Estas propiedades son muy importantes para garantizar la corrección de los programas que tratan la información.
 
 _El protocolo UDP es un protocolo no orientado a la conexión. Sólo se garantiza que si un mensaje llega, llegue bien. En ningún caso se garantiza que llegue o que lleguen todos los mensajes en el mismo orden que se mandaron. Esto lo hace adecuado para el envío de mensajes frecuentes pero no demasiado importantes, como por ejemplo, mensajes para los refrescos (actualizaciones) de un gráfico.._ 
 
