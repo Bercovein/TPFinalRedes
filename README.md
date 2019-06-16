@@ -1,14 +1,8 @@
 # TPFinalRedes (Bertolotti - Bercovsky)
-Trabajo final sobre Sockets ( Servidor - Cliente ) 
 
+## Trabajo Práctico Final Sockets ( Cliente - Servidor ) 
 
 http://profesores.elo.utfsm.cl/~agv/elo330/2s14/lectures/Java/JavaNetworking.html
-
-
-Trabajo Práctico Final 
-Sockets
-
-Preguntas
 
 ## 1.¿Qué es un puerto?
 
