@@ -1,6 +1,6 @@
-# TPFinalRedes (Bertolotti - Bercovsky)
-
-## Trabajo Práctico Final Sockets ( Cliente - Servidor ) 
+# Trabajo Práctico Final Sockets ( Cliente - Servidor ) 
+    * ### Bercovsky Nicolas
+    * ### Bertolotti Marcos
 
 http://profesores.elo.utfsm.cl/~agv/elo330/2s14/lectures/Java/JavaNetworking.html
 
