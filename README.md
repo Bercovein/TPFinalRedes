@@ -1,4 +1,4 @@
-# Trabajo Práctico Final Sockets ( Cliente - Servidor ) 
+# Trabajo Práctico Final Sockets TCP/IP (Cliente - Servidor) 
  * ### Bercovsky Nicolas
  * ### Bertolotti Marcos
 
