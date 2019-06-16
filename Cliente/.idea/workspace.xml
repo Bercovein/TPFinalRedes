@@ -7,13 +7,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59089b14-e350-4759-8506-99eb613c6a15" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ResponseThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Client.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/Server.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/Server.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/Server.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/Server.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ServerApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ServerThread.java" afterDir="false" />
     </list>
@@ -30,10 +28,24 @@
       <file leaf-file-name="Client.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
-              <caret line="51" selection-start-line="51" selection-end-line="51" />
+            <state relative-caret-position="425">
+              <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClientOne.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/company/ClientOne.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="335">
+              <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#295#296#0" expanded="true" />
+                <element signature="e#329#330#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -58,12 +70,13 @@
         <option value="$PROJECT_DIR$/src/com/company/domain/Client.java" />
         <option value="$PROJECT_DIR$/src/com/company/main.java" />
         <option value="$PROJECT_DIR$/src/com/company/domain/Server.java" />
+        <option value="$PROJECT_DIR$/src/com/company/TelnetClientJava.java" />
         <option value="$PROJECT_DIR$/src/com/company/Client.java" />
+        <option value="$PROJECT_DIR$/src/com/company/ClientOne.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="800" />
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="width" value="800" />
     <option name="height" value="860" />
   </component>
@@ -74,7 +87,6 @@
     </navigator>
     <panes>
       <pane id="AndroidView" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -98,6 +110,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,7 +162,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="800" y="0" width="800" height="860" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -159,12 +173,12 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="8" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.27714285" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27653632" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.32733223" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15135135" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.0996144" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -184,6 +198,16 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1242">
@@ -213,10 +237,32 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/TelnetClientJava.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="5" lean-forward="true" selection-start-line="4" selection-end-line="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/ClientOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="335">
+          <caret line="22" column="70" selection-start-line="22" selection-start-column="70" selection-end-line="22" selection-end-column="70" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#295#296#0" expanded="true" />
+            <element signature="e#329#330#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        <state relative-caret-position="425">
+          <caret line="23" column="5" lean-forward="true" selection-start-line="23" selection-start-column="5" selection-end-line="23" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

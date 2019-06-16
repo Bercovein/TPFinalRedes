@@ -2,6 +2,7 @@ package com.company;
 
 import java.io.*;
 import java.net.ConnectException;
+import java.net.InetAddress;
 import java.net.Socket;
 import java.net.SocketException;
 import java.util.logging.Level;
@@ -9,6 +10,22 @@ import java.util.logging.Logger;
 
 public class Client {
 
+    public static final int PORT = 3000;
+    static final int MAX_THREADS = 40;
+
+    public static void main(String[] args) throws IOException, InterruptedException {
+        InetAddress addr = InetAddress.getByName(null);
+
+        while(true) {
+            if(ClientOne.threadCount() < MAX_THREADS)
+                new ClientOne(addr);
+            //      Thread.currentThread().sleep(100);
+        }
+    }
+}
+
+
+    /*
     public static void main(String[] args) {
 
         final String HOST = "localhost";
@@ -58,4 +75,5 @@ public class Client {
             Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
         }
     }
-}
+    }*/
+

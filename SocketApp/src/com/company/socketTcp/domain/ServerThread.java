@@ -6,12 +6,43 @@ import java.net.SocketException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-public class ServerThread implements Runnable {
+public class ServerThread extends Thread {
 
+    private Socket socket;
+    private BufferedReader in;
+    private PrintWriter out;
+
+    public ServerThread(Socket s) throws IOException {
+        socket = s;
+        in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
+        out = new PrintWriter(new BufferedWriter(
+                new OutputStreamWriter(
+                        socket.getOutputStream())), true);
+        start();
+    }
+
+    public void run() {
+        try {
+            while (true) {
+                String str = in.readLine();
+                if (str.equals("END"))
+                    break;
+                System.out.println("[" + socket.getInetAddress().getHostAddress() + "]: " + str);
+                out.println(str);
+            }
+            System.out.println("<<Cerrando: " + socket.getInetAddress().getHostAddress() + ">>");
+        } catch (IOException e) {
+        } finally {
+            try {
+                socket.close();
+            } catch(IOException e) {}
+        }
+    }
+
+    /*
     ServerThread() { }
 
     public void run() {
-
         try {
             while (true) {
 
@@ -52,5 +83,5 @@ public class ServerThread implements Runnable {
         } catch (IOException ex) {
             Logger.getLogger(Server.class.getName()).log(Level.SEVERE, null, ex);
         }
-    }
+    }*/
 }
