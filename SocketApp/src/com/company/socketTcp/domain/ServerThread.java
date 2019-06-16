@@ -8,7 +8,6 @@ import java.util.logging.Logger;
 
 public class ServerThread implements Runnable {
 
-
     ServerThread() { }
 
     public void run() {

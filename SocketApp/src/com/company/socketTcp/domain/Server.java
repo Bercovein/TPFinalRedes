@@ -42,5 +42,22 @@ public class Server{
         return clients;
     }
 
+    public void responseAll(String message) throws IOException {
+        if(clients!=null){
+            for (int i=0; clients.size()>i; i++){
+                DataOutputStream out = new DataOutputStream(clients.get(i).getOutputStream());
+                out.writeUTF(message);
+            }
+        }
+    }
 
+    public void closeServer() throws IOException {
+
+        if(clients!=null){
+            while (clients.size()>0){
+                clients.remove(0).close();
+            }
+        }
+        serverSocket.close();
+    }
 }
