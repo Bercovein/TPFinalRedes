@@ -1,0 +1,14 @@
+
+Activar telnet desde cmd:
+
+-- pkgmgr /iu:"TelnetClient"
+
+Conectarse al servidor desde cmd:
+
+-- telnet 127.0.0.1 3000 // dir ip y puerto que queramos
+
+-- Escribir mensaje (las letras no se ven)
+
+
+
+

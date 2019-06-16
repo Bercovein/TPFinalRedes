@@ -18,7 +18,7 @@ class ClientOne extends Thread {
         System.out.println("Making client " + id);
         threadcount++;
         try {
-            socket = new Socket(addr, Client.PORT);
+            socket = new Socket(addr, /*Client.PORT*/3000);
         } catch(IOException e) {
             System.out.println("No se pudo crear el socket de cliente.");
         }
