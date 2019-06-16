@@ -1,6 +1,6 @@
 # Trabajo Práctico Final Sockets TCP/IP (Cliente - Servidor) 
- * ### Bercovsky Nicolas
- * ### Bertolotti Marcos
+ * ### [Bercovsky Nicolas](https://github.com/Bercovein)
+ * ### [Marcos Bertolotti](https://github.com/MarcosBertolotti)
 
 http://profesores.elo.utfsm.cl/~agv/elo330/2s14/lectures/Java/JavaNetworking.html
 
