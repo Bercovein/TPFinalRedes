@@ -30,7 +30,7 @@ _Para ello son necesarios los tres recursos que originan el concepto de socket:_
 
 ## 4.¿A qué capa del modelo TPC/IP pertenecen los sockets? ¿Porque?
 
-_Los sockets se pueden ver como una interfaz de comunicación entre un proceso de aplicación y la capa de transporte del modelo TCP/IP._
+_Los sockets se pueden ver como una interfaz de comunicación entre un proceso de la capa de aplicación y la capa de transporte del modelo TCP/IP._
 
 ## 5.¿Cómo funciona el modelo cliente-servidor con TCP/IP Sockets?
 
