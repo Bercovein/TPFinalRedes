@@ -41,7 +41,10 @@ Los servidores por lo general son más difíciles de construir que los clientes 
 
 ## 6.¿Cuales son las causas comunes por la que la conexión entre cliente/servidor falle?
 
+Pueden presentarse varias fallas, que el cliente no encuentre al servidor, que la petición del cliente se pierda dentro del servidor o en la red , que el servidor se caiga al procesar un mensaje, que la respuesta del servidor a una petición se pierda o que el cliente haga crash al recibir un mensaje.
 
+El diseño modular de una aplicación cliente/servidor permite que la aplicación sea tolerante a fallos, estos pueden ocurrir sin causar la caída de la aplicación completa. Por lo cual, uno o más servidores pueden fallar sin parar el sistema total mientras que los servicios proporcionados por los servidores caídos estén disponibles en otros servidores activos.
+ 
 
 ## 7.Diferencias entre sockets UDP y TCP
 
