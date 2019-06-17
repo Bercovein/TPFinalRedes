@@ -1,6 +1,6 @@
 # Trabajo Práctico Final Sockets TCP/IP (Cliente - Servidor) 
- * ### Bercovsky Nicolas
- * ### Bertolotti Marcos
+ * ### [Bercovsky Nicolas](https://github.com/Bercovein)
+ * ### [Marcos Bertolotti](https://github.com/MarcosBertolotti)
 
 http://profesores.elo.utfsm.cl/~agv/elo330/2s14/lectures/Java/JavaNetworking.html
 
@@ -30,6 +30,7 @@ _Para ello son necesarios los tres recursos que originan el concepto de socket:_
 
 ## 4.¿A qué capa del modelo TPC/IP pertenecen los sockets? ¿Porque?
 
+_Los sockets se pueden ver como una interfaz de comunicación entre un proceso de la capa de aplicación y la capa de transporte del modelo TCP/IP._
 
 ## 5.¿Cómo funciona el modelo cliente-servidor con TCP/IP Sockets?
 
@@ -40,7 +41,10 @@ Los servidores por lo general son más difíciles de construir que los clientes 
 
 ## 6.¿Cuales son las causas comunes por la que la conexión entre cliente/servidor falle?
 
+_Pueden presentarse varias fallas, que el cliente no encuentre al servidor, que la petición del cliente se pierda dentro del servidor o en la red , que el servidor se caiga al procesar un mensaje, que la respuesta del servidor a una petición se pierda o que el cliente haga crash al recibir un mensaje._
 
+_El diseño modular de una aplicación cliente/servidor permite que la aplicación sea tolerante a fallos, estos pueden ocurrir sin causar la caída de la aplicación completa. Por lo cual, uno o más servidores pueden fallar sin parar el sistema total mientras que los servicios proporcionados por los servidores caídos estén disponibles en otros servidores activos._
+ 
 
 ## 7.Diferencias entre sockets UDP y TCP
 
@@ -57,3 +61,6 @@ _El protocolo UDP es un protocolo no orientado a la conexión. Sólo se garantiz
 
 ## 8.Diferencia entre sync & async sockets?
 
+**Synchronous**: _La mensajería sincrónica involucra a un cliente que espera a que el servidor responda a un mensaje. La mensajería síncrona es una comunicación bidireccional. es decir, el cliente envía un mensaje al servidor y el servidor recibe este mensaje y responde al cliente. El cliente no enviará otro mensaje hasta que reciba una respuesta del servidor._
+
+**Asynchronous**: _La mensajería asíncrona involucra a un cliente que no espera un mensaje del servidor. Un evento se utiliza para desencadenar un mensaje desde un servidor. Entonces, incluso si el cliente está inactivo, la mensajería se completará con éxito. La mensajería asíncrona significa que es una comunicación unidireccional y el flujo de comunicación es solo una forma._
