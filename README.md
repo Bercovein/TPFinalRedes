@@ -61,3 +61,6 @@ _El protocolo UDP es un protocolo no orientado a la conexión. Sólo se garantiz
 
 ## 8.Diferencia entre sync & async sockets?
 
+**Synchronous**: La mensajería sincrónica involucra a un cliente que espera a que el servidor responda a un mensaje. La mensajería síncrona es una comunicación bidireccional. es decir, el cliente envía un mensaje al servidor y el servidor recibe este mensaje y responde al cliente. El cliente no enviará otro mensaje hasta que reciba una respuesta del servidor.
+
+**Asynchronous**: La mensajería asíncrona involucra a un cliente que no espera un mensaje del servidor. Un evento se utiliza para desencadenar un mensaje desde un servidor. Entonces, incluso si el cliente está inactivo, la mensajería se completará con éxito. La mensajería asíncrona significa que es una comunicación unidireccional y el flujo de comunicación es solo una forma.
