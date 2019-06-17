@@ -1,39 +1,39 @@
 package com.company.socketTcp.domain;
 
-import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.OutputStreamWriter;
+import java.io.PrintWriter;
+import java.util.Scanner;
+import static com.company.socketTcp.domain.ServerApp.clients;
 
-public class ResponseThread implements Runnable {
+public class ResponseThread extends Thread {
 
-    static final String SeeClients = "SeeClients";
-    static final String ServerClose = "ServerClose";
+    private PrintWriter out;
+
+    ResponseThread(){
+        start();
+    }
 
     public void run(){
-
         try {
-            Server server = Server.getInstance();
-
-            BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
-
-            while (!server.getSocket().isClosed()) {
-                String message = console.readLine();
-                switch (message) {
-                    case SeeClients:
-                        System.out.println("<<Clients>>");
-                        server.getClients().forEach(socket -> System.out.println(socket.getInetAddress()));
-                        break;
-                    case ServerClose:
-                        server.closeServer();
-                        System.out.println("-->Servidor Cerrado<--");
-                        break;
-                    default:
-                        server.responseAll(message);
-                        break;
-                }
+            while (true){
+                Scanner teclado = new Scanner(System.in);
+                String nombre = teclado.nextLine();
+                clients.stream().forEach(socket ->
+                {
+                    try {
+                        out = new PrintWriter(new BufferedWriter(
+                                new OutputStreamWriter(
+                                        socket.getOutputStream())), true);
+                    } catch (IOException e) {
+                        System.out.println("El mensaje no pudo ser enviado a [" +
+                                socket.getInetAddress().getHostName() + "]");
+                    }
+                });
+                sleep(100);
             }
-            System.out.println("Bye Bye");
-        } catch (IOException e) {
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

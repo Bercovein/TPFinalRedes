@@ -1,11 +1,13 @@
 package com.company.socketTcp.domain;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
+import java.io.PrintWriter;
 import java.net.BindException;
+import java.net.InetAddress;
 import java.net.ServerSocket;
 import java.net.Socket;
+import java.util.ArrayList;
+import java.util.List;
 
 import static java.util.Objects.isNull;
 
@@ -13,29 +15,27 @@ public class ServerApp {
 
     static final int PORT = 3000;
     static ServerSocket serverSocket;
+    static List<Socket> clients = new ArrayList<Socket>();
 
     public static void main(String[] args) throws IOException {
 
         try{
             serverSocket = new ServerSocket(PORT);
 
-            System.out.println("-->Servidor Iniciado<--");
+            System.out.println("-->Servidor [IP:" + InetAddress.getLocalHost().getHostAddress() + "] Iniciado<--");
 
         }catch(BindException e){
-            System.out.println("Error, el puerto ya esta en uso");
+            System.out.println("Error: el puerto " + PORT + " ya está en uso");
         }
 
         try {
+            //new ResponseThread();
             if(!isNull(serverSocket) && !serverSocket.isClosed()) {
 
                 while (true) {
                     Socket socket = serverSocket.accept();
-                    String client = "[" + socket.getInetAddress().getHostName() + "::" + socket.getPort() + "]";
-
-                    System.out.println("<<Cliente" + client + " -> Conectado>>");
-
                     try {
-                        new ServerThread(socket, client);
+                        new ServerThread(socket);
                     } catch (IOException e) {
                         socket.close();
                     }
@@ -48,24 +48,4 @@ public class ServerApp {
             }
         }
     }
-
-
-
-    /*
-    public static void main(String[] args) {
-
-        try {
-            Server server = Server.getInstance(); //crea el servidor
-            System.out.println("-->Servidor Iniciado<--");
-
-            Runnable threadIn = new ServerThread();
-            Runnable threadOut= new ResponseThread();
-            threadIn.run();
-            threadOut.run();
-
-
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }*/
 }
