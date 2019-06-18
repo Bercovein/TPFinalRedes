@@ -5,40 +5,32 @@ import java.net.Socket;
 import java.net.SocketException;
 
 import static com.company.socketTcp.domain.ServerApp.clients;
+import static com.company.socketTcp.domain.ServerApp.serverSocket;
 
 public class ServerThread extends Thread {
 
     private Socket socket;
     private String client;
     private BufferedReader in;
-    private PrintWriter out;
     private String mensaje;
 
-    ServerThread(Socket socket) throws IOException {
+    ServerThread(Socket socket, String client) throws IOException {
 
-        this.client = "[" + socket.getInetAddress().getHostName() + "::" + socket.getPort() + "]";
-        System.out.println("<<Cliente" + client + " -> Conectado>>");
+        this.client = client;
         this.socket = socket;
-
         this.in = new BufferedReader(new InputStreamReader(this.socket.getInputStream()));
-        this.out = new PrintWriter(new BufferedWriter(
-                new OutputStreamWriter(
-                        this.socket.getOutputStream())), true);
         clients.add(socket);
         start();
     }
 
     public void run() {
         try {
-            while (!this.socket.isClosed()) {
+            while (!this.socket.isClosed() && !serverSocket.isClosed()) {
                 this.mensaje = this.in.readLine(); // espero que el cliente me escriba
 
-                System.out.println("Cliente" + this.client + " -> " + this.mensaje);
-
-                this.out.println("✓✓ -> " + this.mensaje); // ack, envia confirmacion al cliente.
+                System.out.println(this.client + "-> " + this.mensaje);
 
                 if (this.mensaje.toLowerCase().equals("x")) { // sale del while cuando el cliente escribe una "x"
-                    this.out.println("-> Desconectado del Servidor");
                     this.socket.close();
                 }
             }

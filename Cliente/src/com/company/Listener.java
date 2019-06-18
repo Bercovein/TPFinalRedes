@@ -9,7 +9,7 @@ import java.net.SocketException;
 public class Listener extends Thread {
 
     private BufferedReader in;
-    private String message;
+    private String message = "";
 
 
     Listener() {
@@ -24,15 +24,16 @@ public class Listener extends Thread {
     public void run(){
 
         try {
-            while(true){
+            while(message!=null){
                 message = in.readLine();
-                System.out.println("[Servidor]: " + message);
+                if(message!=null){
+                    System.out.println(message);
+                }
             }
         } catch(SocketException ex ){
             System.out.println("Se ha perdido la conexión con servidor");
         } catch (IOException e) {
             System.out.println("Se ha perdido la conexión con el servidor");
-
         } finally {
             try {
                 if(!Client.socket.isClosed())
@@ -40,6 +41,7 @@ public class Listener extends Thread {
             } catch (IOException e) {
                 e.printStackTrace();
             }
+            System.out.println("Se ha desconectado del servidor.");
         }
     }
 }

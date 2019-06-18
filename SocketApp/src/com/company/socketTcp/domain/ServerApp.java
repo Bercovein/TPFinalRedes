@@ -29,13 +29,16 @@ public class ServerApp {
         }
 
         try {
-            //new ResponseThread();
+            new ResponseThread();
             if(!isNull(serverSocket) && !serverSocket.isClosed()) {
 
-                while (true) {
+                while (!serverSocket.isClosed()) {
                     Socket socket = serverSocket.accept();
+                    String client = "[" + socket.getInetAddress().getHostName() + "::" + socket.getPort() + "]";
+                    System.out.println("<<Cliente "+ client + "conectado>>");
+
                     try {
-                        new ServerThread(socket);
+                        new ServerThread(socket,client);
                     } catch (IOException e) {
                         socket.close();
                     }
@@ -44,8 +47,9 @@ public class ServerApp {
         } finally {
             if(!isNull(serverSocket) && !serverSocket.isClosed()) {
                 serverSocket.close();
-                System.out.println("-->Servidor Cerrado<--");
+
             }
+            System.out.println("-->Servidor Cerrado<--");
         }
     }
 }

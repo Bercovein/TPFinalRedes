@@ -21,15 +21,13 @@ public class Client {
 
         try {
             if (!isNull(socket) && socket.isConnected()) {
-                //new Listener();
-                String ack; //Recibo el mensaje del servidor
+                new Listener();
                 String mensaje;
                 boolean exit;
 
                 System.out.println("Conexión establecida con: " + host + " por el puerto: " + port);
 
                 BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
-                BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
 
                 PrintWriter out = new PrintWriter(new BufferedWriter(
                         new OutputStreamWriter(socket.getOutputStream())), true);
@@ -37,23 +35,15 @@ public class Client {
                 do {
                     mensaje = console.readLine(); // escribimos el mensaje y lo guardamos
                     out.println(mensaje); // para enviar el mensaje al servidor
-
-                    ack = in.readLine(); // el servidor me envia la confirmacion de mi mensaje
-                    System.out.println(ack);
-
+                    System.out.println("✓✓");
                     exit = mensaje.toLowerCase().startsWith("x");
 
-                    if (exit) {
-                        ack = in.readLine();
-                        System.out.println(ack);
-                    }
                 } while (!exit);
 
-                in.close();
+                System.out.println("Desconectado del servidor.");
                 out.close();
                 socket.close();
             }
-
         } catch (ConnectException con){
             System.out.println("No se pudo acceder al servidor");
         } catch (SocketException soc){
