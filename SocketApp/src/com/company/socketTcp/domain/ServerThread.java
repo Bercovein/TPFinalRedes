@@ -4,6 +4,7 @@ import java.io.*;
 import java.net.Socket;
 import java.net.SocketException;
 
+import static com.company.socketTcp.domain.Config.*;
 import static com.company.socketTcp.domain.ServerApp.clients;
 import static com.company.socketTcp.domain.ServerApp.serverSocket;
 
@@ -28,18 +29,16 @@ public class ServerThread extends Thread {
             while (!this.socket.isClosed() && !serverSocket.isClosed()) {
                 this.mensaje = this.in.readLine(); // espero que el cliente me escriba
 
-                System.out.println(this.client + "-> " + this.mensaje);
+                System.out.println(cyan + this.client + ": "+ white + this.mensaje);
 
                 if (this.mensaje.toLowerCase().equals("x")) { // sale del while cuando el cliente escribe una "x"
                     this.socket.close();
                 }
             }
-            System.out.println("<<Cliente: " + this.client + " -> Desconectado>>");
+            System.out.println(cyan + "<<Cliente: " + this.client + " -> Desconectado>>");
 
-        }catch(SocketException ex ){
-            System.out.println("Se ha perdido la conexión con el cliente: " + client);
         } catch (IOException e) {
-            System.out.println("Se ha perdido la conexión con el cliente: " + client);
+            System.out.println(red + "Se ha perdido la conexión con el cliente: " + client);
 
         } finally {
             try {

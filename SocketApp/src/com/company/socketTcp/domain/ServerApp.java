@@ -1,7 +1,6 @@
 package com.company.socketTcp.domain;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.net.BindException;
 import java.net.InetAddress;
 import java.net.ServerSocket;
@@ -9,11 +8,11 @@ import java.net.Socket;
 import java.util.ArrayList;
 import java.util.List;
 
+import static com.company.socketTcp.domain.Config.*;
 import static java.util.Objects.isNull;
 
 public class ServerApp {
 
-    static final int PORT = 3000;
     static ServerSocket serverSocket;
     static List<Socket> clients = new ArrayList<Socket>();
 
@@ -22,10 +21,10 @@ public class ServerApp {
         try{
             serverSocket = new ServerSocket(PORT);
 
-            System.out.println("-->Servidor [IP:" + InetAddress.getLocalHost().getHostAddress() + "] Iniciado<--");
+            System.out.println(yellow + "-->Servidor [IP:" + InetAddress.getLocalHost().getHostAddress() + "] Iniciado<--");
 
         }catch(BindException e){
-            System.out.println("Error: el puerto " + PORT + " ya está en uso");
+            System.out.println(red + "Error: el puerto " + PORT + " ya está en uso");
         }
 
         try {
@@ -34,8 +33,8 @@ public class ServerApp {
 
                 while (!serverSocket.isClosed()) {
                     Socket socket = serverSocket.accept();
-                    String client = "[" + socket.getInetAddress().getHostName() + "::" + socket.getPort() + "]";
-                    System.out.println("<<Cliente "+ client + "conectado>>");
+                    String client = "[" + socket.getInetAddress().getHostName() + "->" + socket.getPort() + "]";
+                    System.out.println(cyan + "<<Cliente "+ client + "conectado>>");
 
                     try {
                         new ServerThread(socket,client);
@@ -49,7 +48,7 @@ public class ServerApp {
                 serverSocket.close();
 
             }
-            System.out.println("-->Servidor Cerrado<--");
+            System.out.println(yellow + "-->Servidor Cerrado<--");
         }
     }
 }

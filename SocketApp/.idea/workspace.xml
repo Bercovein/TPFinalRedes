@@ -7,13 +7,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a9a1e59-7f52-4004-b85b-d5a691772e42" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/com/company/socketTcp/domain/Config.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cliente/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cliente/out/production/Cliente/com/company/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/out/production/Cliente/com/company/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cliente/src/com/company/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/src/com/company/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cliente/src/com/company/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/src/com/company/Listener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SocketApp/com/company/socketTcp/domain/ResponseThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SocketApp/com/company/socketTcp/domain/ResponseThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../telnet.txt" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,10 +29,10 @@
       <file leaf-file-name="ServerApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+            <state relative-caret-position="-20">
+              <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
               <folding>
-                <element signature="e#447#455#0" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -40,8 +41,8 @@
       <file leaf-file-name="ServerThread.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-81">
-              <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+            <state>
+              <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -52,10 +53,12 @@
       <file leaf-file-name="ResponseThread.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="295">
-              <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+            <state relative-caret-position="75">
+              <caret line="103" column="131" selection-start-line="103" selection-start-column="131" selection-end-line="103" selection-end-column="131" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#623#624#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -90,15 +93,17 @@
         <option value="$PROJECT_DIR$/src/com/company/socketTcp/main.java" />
         <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/Server.java" />
         <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerOne.java" />
+        <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/Config.java" />
+        <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java" />
         <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java" />
         <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java" />
-        <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="800" />
-    <option name="width" value="800" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="305" />
+    <option name="y" value="24" />
+    <option name="width" value="919" />
     <option name="height" value="860" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -109,7 +114,6 @@
     <panes>
       <pane id="PackagesPane" />
       <pane id="Scope" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -132,6 +136,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -212,23 +217,22 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="305" y="24" width="919" height="860" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32808024" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.10335196" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" weight="0.14664805" />
+      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50064266" side_tool="true" weight="0.26256984" />
       <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.26256984" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4993573" weight="0.33142856" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32960895" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.46142858" />
       <window_info id="Capture Tool" order="5" />
       <window_info id="Designer" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28513515" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20372526" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -248,10 +252,10 @@
       <window_info anchor="bottom" id="Find" order="1" weight="0.24581006" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.30027932" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26256984" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28513515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27120823" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
@@ -268,7 +272,7 @@
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32960895" />
       <window_info id="Capture Tool" order="5" />
       <window_info anchor="right" id="Maven" order="8" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.32808024" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.10335196" />
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info id="Favorites" order="6" side_tool="true" />
     </layout-to-restore>
@@ -279,10 +283,42 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="837">
+          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="837">
           <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
           <folding>
-            <element signature="e#447#455#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -303,6 +339,8 @@
           <caret line="26" column="36" selection-start-line="26" selection-start-column="36" selection-end-line="26" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -312,7 +350,7 @@
         <state relative-caret-position="567">
           <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <element signature="e#447#455#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -323,6 +361,8 @@
           <caret line="19" column="26" lean-forward="true" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -352,7 +392,7 @@
         <state relative-caret-position="567">
           <caret line="21" column="58" selection-start-line="21" selection-start-column="58" selection-end-line="21" selection-end-column="58" />
           <folding>
-            <element signature="e#447#455#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -377,10 +417,17 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerOne.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/Server.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="243">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-81">
-          <caret line="31" lean-forward="true" selection-start-line="31" selection-end-line="31" />
+        <state>
+          <caret line="31" column="58" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -389,20 +436,29 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="35" column="20" lean-forward="true" selection-start-line="35" selection-start-column="20" selection-end-line="35" selection-end-column="20" />
+        <state relative-caret-position="-20">
+          <caret line="21" column="26" lean-forward="true" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
           <folding>
-            <element signature="e#447#455#0" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Predicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="48" column="12" selection-start-line="48" selection-start-column="12" selection-end-line="48" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="295">
-          <caret line="31" column="60" selection-start-line="31" selection-start-column="60" selection-end-line="31" selection-end-column="60" />
+        <state relative-caret-position="75">
+          <caret line="103" column="131" selection-start-line="103" selection-start-column="131" selection-end-line="103" selection-end-column="131" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#623#624#0" expanded="true" />
           </folding>
         </state>
       </provider>
