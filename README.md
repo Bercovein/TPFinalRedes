@@ -11,6 +11,11 @@ Por lo tanto, a cada una de estas aplicaciones puede serle asignada una direcci�
 
 ## 2.¿Como estan formados los endpoints?
 
+_Los sistemas de ciberseguridad Endpoint, que se pueden adquirir como software o como un dispositivo dedicado, sirven para descubrir, gestionar y controlar los dispositivos que solicitan acceso a la red corporativa de nuestra empresa._
+
+_Los elementos que lo forman pueden incluir un sistema operativo, un cliente VPN y una licencia anti-virus._
+
+_Los dispositivos Endpoint trabajan bajo un modelo cliente/servidor en el que un servidor o gateway de gestión centralizada acoge el programa de seguridad, mientras que un programa cliente de acompañamiento se instala en cada dispositivo de red. En un  sistema SaaS(Software as a Service) el servidor host y los programas de seguridad se mantienen a distancia por el proveedor de la solución, y cuando un cliente intenta conectarse a la red, el programa servidor valida las credenciales del usuario y escanea el dispositivo para asegurarse de que cumple con las políticas de ciberseguridad corporativas definidas antes de permitir el acceso a la red._
 
 ## 3.¿Que es un socket?
 
