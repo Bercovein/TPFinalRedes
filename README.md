@@ -16,6 +16,8 @@ Pasos para activar telnet desde cmd:
 	-- Escribir: pkgmgr /iu:"TelnetClient"
 
 
+
+
 Conectarse al servidor desde cmd:
 
 	-- telnet [IP SERVIDOR] [3000] 
@@ -26,7 +28,8 @@ Conectarse al servidor desde cmd:
 
 
 Comandos del servidor:
-
-	-- /whisp : Modo WHISPER, inicia conversación personal con el cliente
-	-- /back : Vuelve del modo whisper al chat general
-	-- x : EXIT, cierra el servidor
+	-- /help    -> Ver comandos de navegación
+	-- /whisp   -> Hablar a cliente por privado
+	-- /back    -> Volver al chat general
+	-- /clients -> Listar los clientes conectados
+	-- x        -> Cerrar el servidor

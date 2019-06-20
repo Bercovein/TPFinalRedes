@@ -19,7 +19,7 @@ public class ServerApp {
             serverSocket = new ServerSocket(PORT);
 
             System.out.println(yellow + "-->Servidor [IP:" + InetAddress.getLocalHost().getHostAddress() + "] Iniciado<--");
-            System.out.println(cyan + "Ver Comandos: /help");
+            System.out.println(cyan + "Ver Comandos: /help" + "\n");
 
         }catch(BindException e){
             System.out.println(red + "Error: el puerto " + PORT + " ya está en uso");
@@ -32,7 +32,8 @@ public class ServerApp {
                 while (!serverSocket.isClosed()) {
                     Socket socket = serverSocket.accept();
                     String client = "[" + socket.getInetAddress().getHostName() + "->" + socket.getPort() + "]";
-                    System.out.println(cyan + "<<Cliente "+ client + "conectado>>");
+                    System.out.println("\n" + cyan + "<<Cliente "+ client + " conectado>>" + "\n");
+
 
                     try {
                         new ServerThread(socket,client);
@@ -42,13 +43,13 @@ public class ServerApp {
                 }
             }
         }catch(SocketException e){
-            System.out.println(red + "Acceso al servidor cerrado");
+            System.out.println("\n" + red + "Acceso al servidor cerrado");
         }
         finally {
             if(!isNull(serverSocket) && !serverSocket.isClosed()) {
                 serverSocket.close();
             }
-            System.out.println(yellow + "-->Servidor Cerrado<--");
+            System.out.println("\n" + yellow + "-->Servidor Cerrado<--");
 
         }
     }

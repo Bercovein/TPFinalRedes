@@ -5,6 +5,8 @@ import java.net.*;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+
+import static com.company.Config.*;
 import static java.util.Objects.isNull;
 
 public class Client {
@@ -25,7 +27,7 @@ public class Client {
                 String mensaje;
                 boolean exit;
 
-                System.out.println("Conexión establecida con: " + host + " por el puerto: " + port);
+                System.out.println( yellow + "Conexión establecida con: " + host + " por el puerto: " + port);
 
                 BufferedReader console = new BufferedReader(new InputStreamReader(System.in));
 
@@ -33,14 +35,15 @@ public class Client {
                         new OutputStreamWriter(socket.getOutputStream())), true);
 
                 do {
+                    System.out.print(cyan + "> ");
                     mensaje = console.readLine(); // escribimos el mensaje y lo guardamos
                     out.println(mensaje); // para enviar el mensaje al servidor
-                    System.out.println("✓✓");
+                    System.out.println(green + "✓✓");
                     exit = mensaje.toLowerCase().startsWith("x");
 
                 } while (!exit);
 
-                System.out.println("Desconectado del servidor.");
+                System.out.println(yellow + "Desconectado del servidor.");
                 out.close();
                 socket.close();
             }
@@ -56,22 +59,22 @@ public class Client {
     public static void connectToServer(Scanner sc){
 
         try {
-            System.out.println("Ingrese la dirección host del servidor");
+            System.out.println(cyan + "Ingrese la dirección host del servidor");
             host = sc.nextLine();
 
-            System.out.println("Ingrese el puerto del servidor");
+            System.out.println(cyan + "Ingrese el puerto del servidor");
             port = verifyIsInt(sc);
 
-            System.out.println("(Buscando servidor...)");
+            System.out.println( yellow + "(Buscando servidor...)");
             socket = new Socket(host,port);
 
         }catch(UnknownHostException e) {
-            System.out.println("El host ingresado es desconocido, intente nuevamente");
+            System.out.println(red + "El host ingresado es desconocido, intente nuevamente");
             connectToServer(new Scanner(System.in));
         }catch(IllegalArgumentException e){
-            System.out.println("Rango de puerto no valido, Rango valido: 0 a 65535");
+            System.out.println( red + "Rango de puerto no valido, Rango valido: 1024 a 65535");
         } catch (ConnectException con){
-            System.out.println("No se pudo acceder al servidor");
+            System.out.println(red + "No se pudo acceder al servidor");
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -83,13 +86,13 @@ public class Client {
 
         while(!sc.hasNextInt()){
 
-            System.out.println("Solo se puede ingresar numeros entre 0 y 65535, intente nuevamente");
+            System.out.println(red + "Solo se puede ingresar numeros entre 1024 y 65535, intente nuevamente");
             sc.next();
         }
         number = sc.nextInt();
 
-        if(number < 0 || number > 65535){
-            System.out.println("Solo se puede ingresar numeros entre 0 y 65535, intente nuevamente");
+        if(number < 1024 || number > 65535){
+            System.out.println(red + "Solo se puede ingresar numeros entre 1024 y 65535, intente nuevamente");
             number = verifyIsInt(sc);
         }
         return number;

@@ -5,6 +5,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.SocketException;
 
+import static com.company.Config.*;
 
 public class Listener extends Thread {
 
@@ -17,7 +18,7 @@ public class Listener extends Thread {
             this.in = new BufferedReader(new InputStreamReader(Client.socket.getInputStream()));
             start();
         } catch (IOException e) {
-            System.out.println("Ups! No se pueden recibir los mensajes del servidor.");
+            System.out.println(red + "Ups! No se pueden recibir los mensajes del servidor.");
         }
     }
 
@@ -28,12 +29,13 @@ public class Listener extends Thread {
                 message = in.readLine();
                 if(message!=null){
                     System.out.println(message);
+                    System.out.print(cyan + "> ");
                 }
             }
         } catch(SocketException ex ){
-            System.out.println("Se ha perdido la conexión con servidor");
+            System.out.println(red + "Se ha perdido la conexión con servidor");
         } catch (IOException e) {
-            System.out.println("Se ha perdido la conexión con el servidor");
+            System.out.println(red + "Se ha perdido la conexión con el servidor");
         } finally {
             try {
                 if(!Client.socket.isClosed())
@@ -41,7 +43,7 @@ public class Listener extends Thread {
             } catch (IOException e) {
                 e.printStackTrace();
             }
-            System.out.println("Se ha desconectado del servidor.");
+            System.out.println(red + "Se ha desconectado del servidor.");
         }
     }
 }

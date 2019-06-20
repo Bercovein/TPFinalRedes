@@ -25,8 +25,8 @@ public class ResponseThread extends Thread {
 
     public void run(){
         try {
+            Scanner console = new Scanner(System.in);
             while (!serverClosed){
-                Scanner console = new Scanner(System.in);
 
                 System.out.print(cyan + "> ");
                 String message = console.nextLine(); //levanta lo escrito en consola
@@ -40,7 +40,11 @@ public class ResponseThread extends Thread {
                         whisperTo(); //hablar con un cliente en especifico
                         break;
                     case "/help":
-
+                        help();
+                        break;
+                    case "/clients":
+                        getClients();
+                        break;
                     default:
                         responseAll(message); //responde a todos
                         break;
@@ -82,7 +86,7 @@ public class ResponseThread extends Thread {
             }
             System.out.println(green + "✓✓"); //marca que se enviaron a todos
         }else
-            System.out.println(yellow + "No hay clientes conectados");
+            System.out.println(yellow + "-- El servidor esta vacío, nadie lo recibirá --" + "\n");
     }
 
     public void whisperTo() throws IOException { //chat para un cliente en especifico
@@ -91,17 +95,21 @@ public class ResponseThread extends Thread {
         List<Socket> sc = null;
         String client = "";
 
+        Scanner console = new Scanner(System.in);
+
         while (!serverClosed && !command){
-            Scanner console = new Scanner(System.in);
 
             if(isNull(sc)){
-                System.out.println(pink + "Escriba la ip del cliente:");
+
+                System.out.println("\n" + pink + "Escriba la ip del cliente:");
+                System.out.print(cyan + "> ");
                 String message = console.nextLine();
                 sc = clients.stream()
                         .filter(socket -> socket.getInetAddress().getHostName().equals(message))
                         .collect(Collectors.toList());
                 if(sc.size()>1) {
                     System.out.println(pink + "Escriba el puerto del cliente:");
+                    System.out.print(cyan + "> ");
                     String message2 = console.nextLine();
                     sc = sc.stream().filter(socket -> socket.getPort() == Integer.parseInt(message2)).collect(Collectors.toList());
                 }
@@ -110,34 +118,50 @@ public class ResponseThread extends Thread {
                     out = new PrintWriter(new BufferedWriter(
                             new OutputStreamWriter(
                                     sc.get(0).getOutputStream())), true);
-                    System.out.println(pink + "Susurrando a: <" + client + ">");
+                    System.out.println("\n" + pink + "Susurrando a: <" + client + ">");
                 }else {
-                    System.out.println(red + "No se encuentra el cliente, volverá al chat principal");
+                    System.out.println(red + "No se encuentra el cliente, volverá al chat principal" + "\n");
                     break;
                 }
             }
-
+            System.out.print(pink + "> ");
             String message = console.nextLine(); //levanta lo escrito en consola
             command = message.toLowerCase().equals("/back");
 
             switch (message){
                 case "/back":
-                    System.out.println(yellow + "Volviendo al chat principal...");
+                    System.out.println(yellow + "(Regresó al chat principal)" + "\n");
                     command = true;
                     break;
                 case "/whisp": //en caso de querer cambiar de cliente para hablar
                     sc = null;
                     break;
                 default:
-                    out.println(yellow + "[Servidor]: " + white + message);
+                    out.println(pink + "[Servidor]: " + message);
                     break;
             }
         }
     }
 
     private void help(){
-        System.out.println("NICO HACE ESTO");
-        System.out.println("NICO HACE ESTO");
-        System.out.println("NICO HACE ESTO");
+        System.out.println("\n" + yellow + "COMANDOS: ");
+        System.out.println(yellow +"/help    -> Ver comandos de navegación");
+        System.out.println(yellow +"/whisp   -> Hablar a cliente por privado");
+        System.out.println(yellow +"/back    -> Volver al chat general");
+        System.out.println(yellow +"/clients -> Listar los clientes conectados");
+        System.out.println(yellow +"x        -> Cerrar el servidor" + "\n");
+    }
+
+    private void getClients(){
+
+        if (clients.size() > 0) {
+
+            System.out.println(yellow + "<<<Clientes conectados>>>");
+            clients.forEach(socket ->
+                    System.out.println(yellow + "[" + socket.getInetAddress().getHostName()
+                            + "::" + socket.getPort() + "]"));
+        } else
+            System.out.println(yellow + "-- No hay clientes conectados, servidor Vacío --");
+
     }
 }
