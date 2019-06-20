@@ -43,12 +43,11 @@ public class ServerThread extends Thread {
             }
 
         } catch (NullPointerException e){
-            System.out.println(red + " ERROR");
+            System.out.println(red + "Se produjo un cierre inesperado de la conexion del cliente" + client + "\n");
         } catch (IOException e) {
 
             if(!this.socket.isClosed())
                 System.out.println(red + "Se ha perdido la conexión con el cliente: " + client + "\n");
-
         } finally {
             try {
                 if(!this.socket.isClosed()) {

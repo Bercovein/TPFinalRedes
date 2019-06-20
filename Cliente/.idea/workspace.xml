@@ -11,16 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="59089b14-e350-4759-8506-99eb613c6a15" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cliente/com/company/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cliente/com/company/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cliente/com/company/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cliente/com/company/Listener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/company/Listener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Listener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ResponseThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ResponseThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerApp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ResponseThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ResponseThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ServerApp.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ServerThread.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+            <state relative-caret-position="-442">
+              <caret line="44" column="37" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="37" />
             </state>
           </provider>
         </entry>
@@ -44,8 +36,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Listener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            <state relative-caret-position="202">
+              <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -86,7 +78,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="1">
     <option name="x" value="953" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -186,7 +178,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="953" y="0" width="974" height="1047" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.06455142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -197,8 +188,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38730854" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3916849" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38730854" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3916849" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -246,6 +237,18 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout-to-restore>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Listener.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/Client.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/Server.java" />
@@ -261,15 +264,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Listener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="202">
+          <caret line="42" column="33" lean-forward="true" selection-start-line="42" selection-start-column="33" selection-end-line="42" selection-end-column="33" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+        <state relative-caret-position="-442">
+          <caret line="44" column="37" selection-start-line="44" selection-start-column="31" selection-end-line="44" selection-end-column="37" />
         </state>
       </provider>
     </entry>
