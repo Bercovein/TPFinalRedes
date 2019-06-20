@@ -26,29 +26,38 @@ public class ServerThread extends Thread {
     public void run() {
         try {
             while (!this.socket.isClosed() && !serverSocket.isClosed()) {
-                this.mensaje = this.in.readLine(); // espero que el cliente me escriba
 
-                    if(!isNull(mensaje)){
-                        System.out.println(cyan + this.client + ": " + white + this.mensaje);
-                        System.out.print(cyan + "> ");
+                this.mensaje = this.in.readLine(); // espera el mensaje del cliente
+
+                if (!isNull(mensaje)) {
+                    System.out.println(cyan + this.client + ": " + white + this.mensaje);
+                    System.out.print(cyan + "> ");
+
+                    if (this.mensaje.toLowerCase().equals("x")) { // sale del while cuando el cliente escribe una "x"
+                        clients.remove(this.socket);
+                        this.socket.close();
+
+                        System.out.println(cyan + "<<Cliente: " + this.client + " -> Desconectado>>" + "\n");
                     }
-                        if (this.mensaje.toLowerCase().equals("x")) { // sale del while cuando el cliente escribe una "x"
-                            clients.remove(this.socket);
-                            this.socket.close();
-                        }
+                }
             }
-            System.out.println(cyan + "<<Cliente: " + this.client + " -> Desconectado>>" + "\n");
 
-        } catch (IOException | NullPointerException e) {
-            System.out.println(red + "Se ha perdido la conexión con el cliente: " + client + "\n");
+        } catch (NullPointerException e){
+            System.out.println(red + " ERROR");
+        } catch (IOException e) {
 
+            if(!this.socket.isClosed())
+                System.out.println(red + "Se ha perdido la conexión con el cliente: " + client + "\n");
 
         } finally {
             try {
                 if(!this.socket.isClosed()) {
                     clients.remove(this.socket);
                     this.socket.close();
+
+                    System.out.println(cyan + "<<Cliente: " + this.client + " -> Desconectado>>" + "\n");
                 }
+
             } catch (IOException e) {
                 e.printStackTrace();
             }

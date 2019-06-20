@@ -13,7 +13,7 @@ public class Client {
 
     private static String host;
     private static int port;
-    public static Socket socket = null;
+    public static Socket socket;
 
         public static void main(String[] args) {
 
@@ -22,8 +22,10 @@ public class Client {
         connectToServer(sc);  //Creo el socket para conectarme con el servidor
 
         try {
-            if (!isNull(socket) && socket.isConnected()) {
+            if (!isNull(socket) && !socket.isClosed()) {
+
                 new Listener();
+
                 String mensaje;
                 boolean exit;
 
@@ -37,23 +39,26 @@ public class Client {
                 do {
                     System.out.print(cyan + "> ");
                     mensaje = console.readLine(); // escribimos el mensaje y lo guardamos
-                    out.println(mensaje); // para enviar el mensaje al servidor
-                    System.out.println(green + "✓✓");
-                    exit = mensaje.toLowerCase().startsWith("x");
 
-                } while (!exit);
+                    exit = mensaje.toLowerCase().equals("x");
+
+                    if(!isNull(socket) && !socket.isClosed()) {
+
+                        out.println(mensaje); // para enviar el mensaje al servidor
+                        System.out.println(green + "✓✓");
+                    }
+                } while (!exit && !isNull(socket) && !socket.isClosed());
 
                 System.out.println(yellow + "Desconectado del servidor.");
-                out.close();
-                socket.close();
             }
         } catch (ConnectException con){
-            System.out.println("No se pudo acceder al servidor");
+            System.out.println(red + "No se pudo acceder al servidor");
         } catch (SocketException soc){
-            System.out.println("Se ha perdido la conexión con el servidor.");
+            System.out.println(red + "3Se ha perdido la conexión con el servidor.");
         } catch (IOException ex) {
             Logger.getLogger(Client.class.getName()).log(Level.SEVERE, null, ex);
         }
+
     }
 
     public static void connectToServer(Scanner sc){
@@ -65,18 +70,18 @@ public class Client {
             System.out.println(cyan + "Ingrese el puerto del servidor");
             port = verifyIsInt(sc);
 
-            System.out.println( yellow + "(Buscando servidor...)");
+            System.out.println(yellow + "(Buscando servidor...)");
             socket = new Socket(host,port);
 
         }catch(UnknownHostException e) {
             System.out.println(red + "El host ingresado es desconocido, intente nuevamente");
             connectToServer(new Scanner(System.in));
         }catch(IllegalArgumentException e){
-            System.out.println( red + "Rango de puerto no valido, Rango valido: 1024 a 65535");
+            System.out.println(red + "Rango de puerto no valido, Rango valido: 1024 a 65535");
         } catch (ConnectException con){
             System.out.println(red + "No se pudo acceder al servidor");
         } catch (IOException e) {
-            e.printStackTrace();
+            System.out.println(red + "Error al intentar conectar cliente al servidor");
         }
     }
 
