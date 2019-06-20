@@ -61,9 +61,9 @@ public class ResponseThread extends Thread {
             if(clients.size()>0){
 
                 for(int i = 0; i < clients.size(); i++){
-                    Socket socket = clients.get(i);
+                    //Socket socket = clients.get(i);
                     clients.get(i).close();
-                    clients.remove(socket);
+                    //clients.remove(socket);
                 }
             }
             serverSocket.close();

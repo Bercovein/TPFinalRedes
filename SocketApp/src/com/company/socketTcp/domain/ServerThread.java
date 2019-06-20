@@ -53,8 +53,6 @@ public class ServerThread extends Thread {
                 if(!this.socket.isClosed()) {
                     clients.remove(this.socket);
                     this.socket.close();
-
-                    System.out.println(cyan + "<<Cliente: " + this.client + " -> Desconectado>>" + "\n");
                 }
 
             } catch (IOException e) {
