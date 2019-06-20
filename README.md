@@ -15,7 +15,10 @@ Pasos para activar telnet desde cmd:
 
 	-- Escribir: pkgmgr /iu:"TelnetClient"
 
-
+Abrir los .jar con cmd 
+	
+	-- Abrir la consola cmd
+	-- Escribir: java -jar [Path del .jar] 
 
 
 Conectarse al servidor desde cmd:

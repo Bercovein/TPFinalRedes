@@ -15,17 +15,12 @@ public class ServerApp {
 
     public static void main(String[] args) throws IOException {
 
-        try{
+        try {
             serverSocket = new ServerSocket(PORT);
 
             System.out.println(yellow + "-->Servidor [IP:" + InetAddress.getLocalHost().getHostAddress() + "] Iniciado<--");
             System.out.println(cyan + "Ver Comandos: /help" + "\n");
 
-        }catch(BindException e){
-            System.out.println(red + "Error: el puerto " + PORT + " ya está en uso");
-        }
-
-        try {
             new ResponseThread();
             if(!isNull(serverSocket) && !serverSocket.isClosed()) {
 
@@ -42,15 +37,15 @@ public class ServerApp {
                     }
                 }
             }
-        }catch(SocketException e){
+        } catch(BindException ec){
+            System.out.println(red + "Error: el puerto " + PORT + " ya está en uso");
+        } catch(SocketException e){
             System.out.println("\n" + red + "Acceso al servidor cerrado");
-        }
-        finally {
+        } finally {
             if(!isNull(serverSocket) && !serverSocket.isClosed()) {
                 serverSocket.close();
             }
             System.out.println("\n" + yellow + "-->Servidor Cerrado<--");
-
         }
     }
 }
