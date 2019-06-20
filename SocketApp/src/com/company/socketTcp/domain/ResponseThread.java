@@ -27,6 +27,8 @@ public class ResponseThread extends Thread {
         try {
             while (!serverClosed){
                 Scanner console = new Scanner(System.in);
+
+                System.out.print(cyan + "> ");
                 String message = console.nextLine(); //levanta lo escrito en consola
                 serverClosed = message.toLowerCase().equals("x");
 
@@ -37,6 +39,8 @@ public class ResponseThread extends Thread {
                     case "/whisp":
                         whisperTo(); //hablar con un cliente en especifico
                         break;
+                    case "/help":
+
                     default:
                         responseAll(message); //responde a todos
                         break;
@@ -51,14 +55,11 @@ public class ResponseThread extends Thread {
     public void closeServer() throws IOException {
         if(serverClosed){ //si se envia una "x" cerrará todos los sockets de clientes y luego el servidor
             if(clients.size()>0){
-                do{
-                    try {
-                        clients.get(0).close();
-                        clients.remove(clients.get(0));
-                    } catch (IOException e1) {
-                        e1.printStackTrace();
-                    }
-                }while(clients.size()>0);
+
+                for(int i = 0; i < clients.size(); i++){
+                    clients.remove(clients.get(i));
+                    clients.get(i).close();
+                }
             }
             serverSocket.close();
         }
@@ -80,7 +81,8 @@ public class ResponseThread extends Thread {
                 }
             }
             System.out.println(green + "✓✓"); //marca que se enviaron a todos
-        }
+        }else
+            System.out.println(yellow + "No hay clientes conectados");
     }
 
     public void whisperTo() throws IOException { //chat para un cliente en especifico
@@ -131,5 +133,11 @@ public class ResponseThread extends Thread {
                     break;
             }
         }
+    }
+
+    private void help(){
+        System.out.println("NICO HACE ESTO");
+        System.out.println("NICO HACE ESTO");
+        System.out.println("NICO HACE ESTO");
     }
 }

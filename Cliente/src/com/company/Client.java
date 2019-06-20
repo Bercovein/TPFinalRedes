@@ -62,6 +62,7 @@ public class Client {
             System.out.println("Ingrese el puerto del servidor");
             port = verifyIsInt(sc);
 
+            System.out.println("(Buscando servidor...)");
             socket = new Socket(host,port);
 
         }catch(UnknownHostException e) {

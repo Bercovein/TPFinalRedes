@@ -1,10 +1,7 @@
 package com.company.socketTcp.domain;
 
 import java.io.IOException;
-import java.net.BindException;
-import java.net.InetAddress;
-import java.net.ServerSocket;
-import java.net.Socket;
+import java.net.*;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -22,6 +19,7 @@ public class ServerApp {
             serverSocket = new ServerSocket(PORT);
 
             System.out.println(yellow + "-->Servidor [IP:" + InetAddress.getLocalHost().getHostAddress() + "] Iniciado<--");
+            System.out.println(cyan + "Ver Comandos: /help");
 
         }catch(BindException e){
             System.out.println(red + "Error: el puerto " + PORT + " ya está en uso");
@@ -43,12 +41,15 @@ public class ServerApp {
                     }
                 }
             }
-        } finally {
+        }catch(SocketException e){
+            System.out.println(red + "Acceso al servidor cerrado");
+        }
+        finally {
             if(!isNull(serverSocket) && !serverSocket.isClosed()) {
                 serverSocket.close();
-
             }
             System.out.println(yellow + "-->Servidor Cerrado<--");
+
         }
     }
 }

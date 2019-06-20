@@ -7,6 +7,7 @@ import java.net.SocketException;
 import static com.company.socketTcp.domain.Config.*;
 import static com.company.socketTcp.domain.ServerApp.clients;
 import static com.company.socketTcp.domain.ServerApp.serverSocket;
+import static java.util.Objects.isNull;
 
 public class ServerThread extends Thread {
 
@@ -29,21 +30,25 @@ public class ServerThread extends Thread {
             while (!this.socket.isClosed() && !serverSocket.isClosed()) {
                 this.mensaje = this.in.readLine(); // espero que el cliente me escriba
 
-                System.out.println(cyan + this.client + ": "+ white + this.mensaje);
+                    if(!isNull(mensaje))
+                        System.out.println(cyan + this.client + ": " + white + this.mensaje);
 
-                if (this.mensaje.toLowerCase().equals("x")) { // sale del while cuando el cliente escribe una "x"
-                    this.socket.close();
-                }
+                        if (this.mensaje.toLowerCase().equals("x")) { // sale del while cuando el cliente escribe una "x"
+                            clients.remove(this.socket);
+                            this.socket.close();
+                        }
             }
             System.out.println(cyan + "<<Cliente: " + this.client + " -> Desconectado>>");
 
-        } catch (IOException e) {
+        } catch (IOException | NullPointerException e) {
             System.out.println(red + "Se ha perdido la conexión con el cliente: " + client);
 
         } finally {
             try {
-                if(!this.socket.isClosed())
+                if(!this.socket.isClosed()) {
+                    clients.remove(this.socket);
                     this.socket.close();
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }
