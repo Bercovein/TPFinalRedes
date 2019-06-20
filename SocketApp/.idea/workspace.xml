@@ -6,9 +6,7 @@
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a9a1e59-7f52-4004-b85b-d5a691772e42" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java" afterDir="false" />
-    </list>
+    <list default="true" id="5a9a1e59-7f52-4004-b85b-d5a691772e42" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -178,7 +176,7 @@
   <component name="PropertiesComponent">
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560993982610" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cliente" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propGUI" />
@@ -253,8 +251,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
