@@ -10,17 +10,14 @@
     <list default="true" id="5a9a1e59-7f52-4004-b85b-d5a691772e42" name="Default" comment="" />
 =======
     <list default="true" id="5a9a1e59-7f52-4004-b85b-d5a691772e42" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/../Cliente/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Build/Cliente.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Build/Cliente.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Build/SocketApp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Build/SocketApp.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Cliente/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cliente/out/artifacts/Cliente_jar/Cliente.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/out/artifacts/Cliente_jar/Cliente.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cliente/out/production/Cliente/com/company/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/out/production/Cliente/com/company/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cliente/out/production/Cliente/com/company/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/out/production/Cliente/com/company/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Cliente/out/production/Cliente/com/company/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Cliente/out/production/Cliente/com/company/Listener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SocketApp/com/company/socketTcp/domain/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SocketApp/com/company/socketTcp/domain/ResponseThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SocketApp/com/company/socketTcp/domain/ServerApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/SocketApp/com/company/socketTcp/domain/ServerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SocketApp/com/company/socketTcp/domain/ResponseThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SocketApp/com/company/socketTcp/domain/ResponseThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/SocketApp/com/company/socketTcp/domain/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/SocketApp/com/company/socketTcp/domain/ServerThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java" afterDir="false" />
     </list>
 >>>>>>> 76636efcc853cd69224d284f32bac56f4c1cd6ae
     <ignored path="$PROJECT_DIR$/out/" />
@@ -35,11 +32,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="19" selection-start-line="19" selection-end-line="19" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="381">
+              <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -47,11 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="493">
+              <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -59,8 +50,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2533">
-              <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
+            <state relative-caret-position="262">
+              <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#624#625#0" expanded="true" />
@@ -73,8 +64,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/Config.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" selection-start-line="5" selection-end-line="5" />
+            <state relative-caret-position="68">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -114,9 +105,9 @@
         <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/Server.java" />
         <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerOne.java" />
         <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/Config.java" />
+        <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java" />
         <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java" />
         <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java" />
-        <option value="$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java" />
       </list>
     </option>
   </component>
@@ -126,10 +117,10 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="781" />
-    <option name="width" value="800" />
-    <option name="height" value="920" />
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="-7" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -148,19 +139,6 @@
               <item name="SocketApp" type="b2602c69:ProjectViewProjectNode" />
               <item name="SocketApp" type="462c0819:PsiDirectoryNode" />
               <item name="out" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocketApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketApp" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SocketApp" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SocketApp" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="SocketApp_jar" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SocketApp" type="b2602c69:ProjectViewProjectNode" />
@@ -188,10 +166,14 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+<<<<<<< HEAD
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560993982610" />
 <<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../Cliente" />
 =======
+=======
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1561027235026" />
+>>>>>>> 15c0a37eefbcd33c18a06a161e44e6abc43bd9f8
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
 >>>>>>> 76636efcc853cd69224d284f32bac56f4c1cd6ae
     <property name="project.structure.last.edited" value="Project" />
@@ -243,8 +225,8 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="Application.ServerApp" />
       <item itemvalue="Application.Server" />
+      <item itemvalue="Application.ServerApp" />
     </list>
     <recent_temporary>
       <list>
@@ -276,12 +258,17 @@
   </component>
   <component name="ToolWindowManager">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
 =======
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
 >>>>>>> 76636efcc853cd69224d284f32bac56f4c1cd6ae
+=======
+    <frame x="-7" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
+>>>>>>> 15c0a37eefbcd33c18a06a161e44e6abc43bd9f8
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07114094" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14989059" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -290,8 +277,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.24581006" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.2905028" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.31375358" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4993573" visible="true" weight="0.29212254" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.309628" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32960895" />
@@ -309,6 +296,18 @@
       <window_info anchor="right" id="Maven Projects" order="7" />
       <window_info anchor="right" id="Maven" order="8" weight="0.3281879" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java</url>
+          <line>59</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/socketUdp/ServidorUDP.java" />
@@ -332,30 +331,24 @@
     <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerOne.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/Server.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/util/function/Predicate.java" />
-    <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/Config.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="68">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="32" column="54" selection-start-line="32" selection-start-column="54" selection-end-line="32" selection-end-column="54" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="493">
+          <caret line="55" column="16" selection-start-line="55" selection-start-column="16" selection-end-line="55" selection-end-column="16" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ResponseThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2533">
-          <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
+        <state relative-caret-position="262">
+          <caret line="66" column="17" lean-forward="true" selection-start-line="66" selection-start-column="17" selection-end-line="66" selection-end-column="17" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#624#625#0" expanded="true" />
@@ -364,10 +357,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/Config.java">
+    <entry file="file://$PROJECT_DIR$/src/com/company/socketTcp/domain/ServerApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        <state relative-caret-position="381">
+          <caret line="55" column="17" lean-forward="true" selection-start-line="55" selection-start-column="17" selection-end-line="55" selection-end-column="17" />
         </state>
       </provider>
     </entry>

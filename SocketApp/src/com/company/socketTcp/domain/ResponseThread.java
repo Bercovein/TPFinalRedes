@@ -40,13 +40,13 @@ public class ResponseThread extends Thread {
                         whisperTo(); //hablar con un cliente en especifico
                         break;
                     case "/help":
-                        help();
+                        help(); // muestra lista de comandos
                         break;
                     case "/clients":
-                        getClients();
+                        getClients(); // muestra lista de clientes conectados
                         break;
                     default:
-                        responseAll(message); //responde a todos
+                        responseAll(message); //responde a todos los clientes
                         break;
                 }
                 sleep(100);
@@ -61,8 +61,9 @@ public class ResponseThread extends Thread {
             if(clients.size()>0){
 
                 for(int i = 0; i < clients.size(); i++){
-                    clients.remove(clients.get(i));
+                    //Socket socket = clients.get(i);
                     clients.get(i).close();
+                    //clients.remove(socket);
                 }
             }
             serverSocket.close();
@@ -79,6 +80,7 @@ public class ResponseThread extends Thread {
                             new OutputStreamWriter(
                                     clients.get(i).getOutputStream())), true);
                     out.println(yellow + "[Servidor]: " + white + message);
+
                 } catch (IOException e) {
                     clients.remove(clients.get(i)); //elimina al cliente de la lista
                     i--;

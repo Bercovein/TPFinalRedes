@@ -5,19 +5,19 @@
       <artifact name="Cliente:jar" />
     </artifacts-to-build>
   </component>
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/src/com/company/Listener.java" line="37" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="59089b14-e350-4759-8506-99eb613c6a15" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Build/Cliente.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Build/Cliente.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Build/SocketApp.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../Build/SocketApp.jar" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/artifacts/Cliente_jar/Cliente.jar" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Cliente_jar/Cliente.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cliente/com/company/Client.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cliente/com/company/Client.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cliente/com/company/Config.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cliente/com/company/Config.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Cliente/com/company/Listener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Cliente/com/company/Listener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../SocketApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/Config.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ResponseThread.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerApp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerThread.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ResponseThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ResponseThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/out/production/SocketApp/com/company/socketTcp/domain/ServerThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ResponseThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ResponseThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ServerThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/../SocketApp/src/com/company/socketTcp/domain/ServerThread.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,23 +28,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="12">
-              <caret line="67" column="27" lean-forward="true" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+            <state relative-caret-position="406">
+              <caret line="86" selection-start-line="86" selection-end-line="86" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/company/Listener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="424">
+              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
             </state>
           </provider>
         </entry>
@@ -85,10 +82,10 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="781" />
-    <option name="width" value="800" />
-    <option name="height" value="920" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="953" />
+    <option name="width" value="974" />
+    <option name="height" value="1047" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -111,19 +108,6 @@
             <path>
               <item name="Cliente" type="b2602c69:ProjectViewProjectNode" />
               <item name="Cliente" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cliente" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cliente" type="462c0819:PsiDirectoryNode" />
-              <item name="out" type="462c0819:PsiDirectoryNode" />
-              <item name="artifacts" type="462c0819:PsiDirectoryNode" />
-              <item name="Cliente_jar" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Cliente" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Cliente" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -136,16 +120,21 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="cliente" />
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1560716998833" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../SocketApp" />
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
   <component name="RunDashboard">
@@ -162,7 +151,7 @@
   </component>
   <component name="RunManager">
     <configuration name="Client" type="Application" factoryName="Application" nameIsGenerated="true">
-      <option name="ALTERNATIVE_JRE_PATH" value="10" />
+      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="com.company.Client" />
       <module name="Cliente" />
@@ -192,9 +181,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="953" y="0" width="974" height="1047" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.3161074" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.06455142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -203,8 +193,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.38826814" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3924581" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38730854" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3916849" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -223,7 +213,7 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout>
     <layout-to-restore>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.31216216" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.06455142" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -232,8 +222,8 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32960895" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39714286" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.3924581" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.38730854" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3916849" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -252,33 +242,42 @@
       <window_info anchor="right" id="Maven Projects" order="8" />
     </layout-to-restore>
   </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/com/company/Listener.java</url>
+          <line>29</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/Client.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/domain/Server.java" />
     <entry file="jar://C:/Program Files/Java/jdk-10.0.1/lib/src.zip!/java.base/java/net/SocketInputStream.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/TelnetClientJava.java" />
     <entry file="file://$PROJECT_DIR$/src/com/company/ClientOne.java" />
+    <entry file="file://$PROJECT_DIR$/src/com/company/Config.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Client.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12">
-          <caret line="67" column="27" lean-forward="true" selection-start-line="67" selection-start-column="27" selection-end-line="67" selection-end-column="27" />
+        <state relative-caret-position="406">
+          <caret line="86" selection-start-line="86" selection-end-line="86" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/company/Listener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="33" column="13" selection-start-line="33" selection-start-column="13" selection-end-line="33" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/company/Config.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="424">
+          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
